@@ -12,7 +12,7 @@ const Users = () => {
     else {
         return (
             searchResult.map((user, index) => (
-                <div className="col-sm-2 text-center" key={index}>
+                <div className="col-sm-3 text-center" key={index}>
                     <div className="card mb-4">
                         <div className='w-100'>
                             <img src={user.avatar_url} className="img-responsive rounded-circle text-center mt-3" alt="..." width="100" height="100" />

@@ -15,7 +15,7 @@ const App = () => {
             <GithubState>
                 <AlertState>
                     <Header />
-                    <div className="container-fluid">
+                    <div className="container">
                         <Switch>   
                             <Route exact path="/" component={Finder}></Route>
                             <Route exact path="/users/:login" component={User}></Route>
