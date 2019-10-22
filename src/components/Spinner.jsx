@@ -1,9 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { PulseLoader } from 'react-spinners';
  
 const Spinner = () => {
-  const [loading, setLoading] = useState(true)
-
     return (
       <div className='SyncLoader'>
         <PulseLoader

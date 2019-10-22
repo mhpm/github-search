@@ -9,7 +9,6 @@ import NotFound from '../views/NotFound'
 import Header from '../components/layout/Header'
 
 const App = () => {
-    
     return (
         <BrowserRouter>
             <GithubState>

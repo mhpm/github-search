@@ -2,7 +2,7 @@ import React, {useReducer} from 'react'
 import axios from 'axios'
 import GithubContext from './githubContext'
 import GithubReducer from './githubReducer'
-import {GET_USERS, SEARCH_USERS, SET_LOADING, CLEAR_USERS, GET_USER, GET_REPOS} from '../types'
+import {GET_USERS, SEARCH_USERS, SET_LOADING, CLEAR_USERS, GET_USER} from '../types'
 
 
 const GithubState = props => {
@@ -59,10 +59,9 @@ const GithubState = props => {
             searchUsers,
             cleanSearch
         }
-    }>
-        {
-        props.children
-    } </GithubContext.Provider>
+        }>
+        {props.children} 
+    </GithubContext.Provider>
 }
 
 export default GithubState
