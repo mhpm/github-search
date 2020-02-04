@@ -9,7 +9,6 @@ import NotFound from "../views/NotFound"
 import Header from "../components/layout/Header"
 
 const App = () => {
-  console.log("updated")
   return (
     <BrowserRouter>
       <GithubState>
@@ -17,7 +16,11 @@ const App = () => {
           <Header />
           <div className="container">
             <Switch>
-              <Route exact path="/github-search/" component={Finder}></Route>
+              <Route
+                exact
+                path={process.env === "production" ? "/github-search/" : "/"}
+                component={Finder}
+              ></Route>
               <Route exact path="/users/:login" component={User}></Route>
               <Route component={NotFound}></Route>
             </Switch>
