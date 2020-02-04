@@ -27,7 +27,11 @@ const User = props => {
         <br />
         <div className="col-12 text-center">
           <div className="card mb-4">
-            <Link to={process.env === "production" ? "/github-search/" : "/"}>
+            <Link
+              to={
+                process.env.NODE_ENV === "production" ? "/github-search/" : "/"
+              }
+            >
               <i
                 className="position-absolute fas fa-arrow-circle-left text-black-50 fa-2x"
                 style={{ left: 18, top: 15 }}

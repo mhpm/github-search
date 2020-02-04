@@ -9,6 +9,8 @@ import NotFound from "../views/NotFound"
 import Header from "../components/layout/Header"
 
 const App = () => {
+  console.log(process.env)
+
   return (
     <BrowserRouter>
       <GithubState>
@@ -18,7 +20,11 @@ const App = () => {
             <Switch>
               <Route
                 exact
-                path={process.env === "production" ? "/github-search/" : "/"}
+                path={
+                  process.env.NODE_ENV === "production"
+                    ? "/github-search/"
+                    : "/"
+                }
                 component={Finder}
               ></Route>
               <Route exact path="/users/:login" component={User}></Route>
