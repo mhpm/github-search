@@ -11,7 +11,7 @@ const Finder = () => {
 
   useEffect(() => {
     githubContext.getUsers()
-    alertContext.setAlert("Welcome to Github search")
+    //alertContext.setAlert("Welcome to Github search")
   }, [])
 
   return (
