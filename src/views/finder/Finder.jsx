@@ -1,13 +1,13 @@
-import React, { useContext, useEffect, useState } from "react"
+import React, { useContext, useEffect } from "react"
 import GithubContext from "../../context/github/githubContext"
-import AlertContext from "../../context/alert/alertContext"
+//import AlertContext from "../../context/alert/alertContext"
 import Search from "./Search"
-import Users from "./Users"
+import UsersList from "./UserList"
 import Alert from "../../components/Alert"
 
 const Finder = () => {
   const githubContext = useContext(GithubContext)
-  const alertContext = useContext(AlertContext)
+  //const alertContext = useContext(AlertContext)
 
   useEffect(() => {
     githubContext.getUsers()
@@ -19,7 +19,7 @@ const Finder = () => {
       <Search />
       <Alert />
       <div className="row">
-        <Users />
+        <UsersList />
       </div>
     </div>
   )

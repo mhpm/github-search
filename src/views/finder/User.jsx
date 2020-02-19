@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from "react"
-import axios from "axios"
 import { Link } from "react-router-dom"
 import GithubContext from "../../context/github/githubContext"
 import Spinner from "../../components/Spinner"
