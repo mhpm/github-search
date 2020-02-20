@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react"
 import { Link } from "react-router-dom"
-import GithubContext from "../../context/github/githubContext"
-import Spinner from "../../components/Spinner"
+import GithubContext from "context/github/githubContext"
+import Spinner from "components/Spinner"
 
 const User = props => {
   const githubContext = useContext(GithubContext)

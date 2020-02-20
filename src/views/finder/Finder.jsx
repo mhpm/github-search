@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react"
-import GithubContext from "../../context/github/githubContext"
+import GithubContext from "context/github/githubContext"
 //import AlertContext from "../../context/alert/alertContext"
 import Search from "./Search"
 import UsersList from "./UserList"
-import Alert from "../../components/Alert"
+import Alert from "components/Alert"
 
 const Finder = () => {
   const githubContext = useContext(GithubContext)
